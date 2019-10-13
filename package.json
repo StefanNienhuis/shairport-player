@@ -1,0 +1,22 @@
+{
+  "name": "shairport-player",
+  "version": "0.0.1",
+  "description": "A simple, yet elegant web interface to see what you're playing through Shairport Sync.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "shairport-sync",
+    "shairport",
+    "airplay",
+    "airplay-gui"
+  ],
+  "author": "Stefan Nienhuis",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mqtt": "^3.0.0",
+    "socket.io": "^2.3.0"
+  }
+}

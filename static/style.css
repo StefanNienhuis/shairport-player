@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    width: 384px;
+    height: 460px;
+    background-color: white;
+}
+
+.player #cover {
+    width: 336px;
+    height: 336px;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.player .text {
+    display: flex;
+    height: 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.player .text #title {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.player .text #subtitle {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
